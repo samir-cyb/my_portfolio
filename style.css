@@ -1,0 +1,328 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+    background: #f3f3f3;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+
+}
+
+.header{
+    background:black;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+.fm1{
+  font-family: "Ga Maamli", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+    font-size: 60px;
+
+    font-family: "Merriweather", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+.wb{
+    font-family: "Edu AU VIC WA NT Arrows", cursive;
+    font-optical-sizing: auto;
+}
+.nav{
+    list-style: none;
+    display: inline-block;
+
+}
+.li{
+    display: inline-block;
+    margin: 0 15px;
+}
+#redwan{
+    color:orangered;
+}
+#Home{
+    background: #141414;
+    background: black;
+    color: white;
+    padding: 20px 0px;
+    padding-left: 20px;
+    display: flex;
+}
+.info{
+    padding-right: 150px;
+    font-size: 25px;
+    text-align: justify;
+    line-height: 48px;
+    
+}
+.sp2{
+    margin-top: 50px;
+    margin-left: 200px;
+}
+.image{
+    padding-left: 320px;
+}
+
+.spro{
+    border: solid whitesmoke;
+    padding: 7px 7px 7px 7px;
+}
+
+#about{
+    background: #1f1e1e;
+    padding-top: 100px;
+}
+.ainfo{
+    padding-left: 43%;
+}
+.am{
+    color:orangered;
+    font-family: "Ga Maamli", sans-serif;
+    font-size: 50px;
+
+    font-family: "Merriweather", serif;
+    font-weight: 600;
+    font-style: normal;
+
+}
+.pp{
+    color: rgb(119, 119, 119);
+    margin-left: -85px;
+    font-size: 20px;
+    
+}
+.dots{
+    color: orangered;
+    font-size: 80px;
+    display: flex;
+    margin-left: 80px;
+    margin-top: -15px;
+
+}
+
+.img2{
+    display: flex;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+.pp2{
+    border: solid white;
+    padding: 2em;
+    position: relative;
+    display: flex;
+
+}
+.pp2::after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: red;
+}
+.abm{
+    color: white;
+    text-align: justify;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+}
+#dobc{
+    padding-right: 10px;
+    color: orangered;
+}
+.email{
+    padding-left: 110px;
+}
+#emc{
+    padding-right: 10px;
+    color: orangered;
+}
+#locc{
+    padding-right: 10px;
+    color: orangered;
+}
+.phn{
+    padding-left: 110px;
+}
+#phnc{
+    padding-right: 10px;
+    color: orangered;
+
+}
+
+
+
+.skills{
+    background: #141414;
+    padding-top: 100px;
+}
+.sh2{
+    color: orangered;
+    margin-left: 570px;
+    font-size: 50px;
+    font-family: "Merriweather", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+.dots2{
+    color: orangered;
+    font-size: 80px;
+    display: flex;
+    margin-left: 605px;
+    margin-top: -25px;
+    padding-bottom: 150px;
+}
+.alls{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-bottom: 150px;
+}
+.skill {
+    background:orangered;
+    padding: 30px;
+    width: 200px;
+    text-align: center;
+    border-radius: 10px;
+    color: #fff;
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+    margin-top: 15px;
+}
+.skill:hover {
+    transform: scale(1.05);
+}
+
+/*project*/
+#projects{
+    padding-top: 100px;
+    background: #1f1e1e
+}
+.pj{
+    color: orangered;
+    margin-left: 570px;
+    font-size: 50px;
+    font-family: "Merriweather", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+.project-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-bottom: 100px;
+}
+
+.project-item {
+    background:orangered;
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    color: white;
+}
+
+.project-item:hover {
+    transform: scale(1.05);
+}
+
+.project-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-details {
+    padding: 20px;
+    color: white;
+}
+
+.project-details h3 {
+    margin-bottom: 10px;
+}
+
+.project-details p {
+    font-size: 1rem;
+}
+.dots3{
+    color: orangered;
+    font-size: 80px;
+    display: flex;
+    margin-left: 635px;
+    margin-top: -25px;
+    padding-bottom: 150px;
+}
+#contact{
+    background:linear-gradient(#ffdad5, #fff7f9);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-left: 50px;
+}
+.cf{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+.gt{
+    font-weight: 600;
+    color: #a363aa;
+    font-family: "Merriweather", serif;
+    font-style: normal;
+    font-size: 50px;
+    margin-bottom: 3px;
+}
+.left hr{
+    border: none;
+    width: 120px;
+    height: 5px;
+    background-color: #a363aa;
+    border-radius: 10px;
+    margin-bottom: 30px;
+
+}
+
+.cinfo{
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 20px;
+    font-weight: 500;
+    color: #666;
+    border-radius: 50px;
+
+}
+#cmsg{
+    padding-top: 20px;
+    height: 140px;
+    border-radius: 20px;
+}
+.button{
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    font-size: 16px;
+    color: white;
+    gap: 10px;
+    border-radius: 50px;
+    background: linear-gradient(270deg,#ff994f,#fa6d86);
+    cursor: pointer;
+    border: none;
+}
+.button:hover{
+    transform: scale(1.05);
+
+}
