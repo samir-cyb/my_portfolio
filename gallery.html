@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Your Name</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html" class="logo">Portfolio</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <div class="menu-btn">
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+        </div>
+    </nav>
+
+    <!-- Gallery Hero Section -->
+    <section class="gallery-hero">
+        <div class="container">
+            <h1>My Gallery</h1>
+            <p>A collection of my best work</p>
+        </div>
+    </section>
+
+    <!-- Gallery Filter -->
+    <section class="gallery-filter section">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="nature">Nature</button>
+                <button class="filter-btn" data-filter="portrait">Portrait</button>
+                <button class="filter-btn" data-filter="urban">Urban</button>
+                <button class="filter-btn" data-filter="commercial">Commercial</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="gallery-grid section">
+        <div class="container">
+            <div class="grid">
+                <div class="grid-item nature" data-category="nature">
+                    <img src="https://images.unsplash.com/photo-1505896202-4ed0cceea51e?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Nature 1">
+                    <div class="grid-overlay">
+                        <h3>Mountain Sunrise</h3>
+                        <p>Nature Photography</p>
+                    </div>
+                </div>
+                <div class="grid-item portrait" data-category="portrait">
+                    <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Portrait 1">
+                    <div class="grid-overlay">
+                        <h3>Portrait Session</h3>
+                        <p>Portrait Photography</p>
+                    </div>
+                </div>
+                <div class="grid-item nature" data-category="nature">
+                    <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Nature 2">
+                    <div class="grid-overlay">
+                        <h3>Nature's Beauty</h3>
+                        <p>Landscape Photography</p>
+                    </div>
+                </div>
+                <div class="grid-item urban" data-category="urban">
+                    <img src="https://images.unsplash.com/photo-1519996529937-47d2f4f7126d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Urban 1">
+                    <div class="grid-overlay">
+                        <h3>Urban Life</h3>
+                        <p>Street Photography</p>
+                    </div>
+                </div>
+                <div class="grid-item commercial" data-category="commercial">
+                    <img src="https://images.unsplash.com/photo-1550684848-fac1c5b4e853?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Commercial 1">
+                    <div class="grid-overlay">
+                        <h3>Abstract Art</h3>
+                        <p>Creative Photography</p>
+                    </div>
+                </div>
+                <div class="grid-item commercial" data-category="commercial">
+                    <img src="https://images.unsplash.com/photo-1516487106395-f2d269d6a21c?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Commercial 2">
+                    <div class="grid-overlay">
+                        <h3>Product Showcase</h3>
+                        <p>Commercial Photography</p>
+                    </div>
+                </div>
+                <div class="grid-item portrait" data-category="portrait">
+                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Portrait 2">
+                    <div class="grid-overlay">
+                        <h3>Studio Portrait</h3>
+                        <p>Portrait Photography</p>
+                    </div>
+                </div>
+                <div class="grid-item urban" data-category="urban">
+                    <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Urban 2">
+                    <div class="grid-overlay">
+                        <h3>Cityscape</h3>
+                        <p>Urban Photography</p>
+                    </div>
+                </div>
+                <div class="grid-item nature" data-category="nature">
+                    <img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Nature 3">
+                    <div class="grid-overlay">
+                        <h3>Forest Path</h3>
+                        <p>Nature Photography</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox">
+        <div class="lightbox-content">
+            <span class="close">&times;</span>
+            <img src="" alt="" class="lightbox-img">
+            <div class="lightbox-caption">
+                <h3></h3>
+                <p></p>
+            </div>
+            <button class="lightbox-prev">&#10094;</button>
+            <button class="lightbox-next">&#10095;</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <h2>Let's Connect</h2>
+            <ul class="social-links">
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="#"><i class="fab fa-behance"></i></a></li>
+            </ul>
+            <p>&copy; 2023 Your Name. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="gallery.js"></script>
+</body>
+</html>
