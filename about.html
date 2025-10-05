@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me | Your Name</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/about.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
@@ -16,7 +16,8 @@
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="projects.html">Projects</a></li>
             <li><a href="index.html#contact">Contact</a></li>
         </ul>
         <div class="menu-btn">
@@ -26,61 +27,105 @@
         </div>
     </nav>
 
-    <!-- About Hero Section -->
+    <!-- About Hero Section with Profile Picture -->
     <section class="about-hero">
         <div class="container">
-            <h1>About Me</h1>
-            <p>Get to know me better</p>
+            <div class="hero-profile">
+                <div class="profile-image-container">
+                    <img src="assets/images/profile.jpg" alt="Redwan Ahamed Samir" class="hero-profile-img">
+                    <div class="profile-overlay">
+                        <div class="profile-badge">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>BSC CSE Student</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-intro">
+                    <h1>Redwan Ahamed Samir</h1>
+                    <p class="title">Deep Learning Researcher & Computer Vision Enthusiast</p>
+                    <p class="subtitle">Tiny Neurons Research Group Member</p>
+                    <div class="hero-stats">
+                        <div class="hero-stat">
+                            <span class="number">2</span>
+                            <span class="label">Published Papers</span>
+                        </div>
+                        <div class="hero-stat">
+                            <span class="number">3+</span>
+                            <span class="label">Years Experience</span>
+                        </div>
+                        <div class="hero-stat">
+                            <span class="number">10+</span>
+                            <span class="label">Projects Completed</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- About Content Section -->
-    <section class="about-content section">
+    <!-- Personal Story Section -->
+    <section class="personal-story section">
         <div class="container">
-            <div class="about-grid">
-                <div class="about-text">
-                    <h2 class="section-title">My Story</h2>
-                    <p>Hello! I'm a professional photographer and designer with over 10 years of experience in creating stunning visual content. My passion lies in capturing moments that tell stories and evoke emotions.</p>
-                    <p>I specialize in portrait, landscape, and commercial photography, with a keen eye for detail and composition. My work has been featured in several exhibitions and publications worldwide.</p>
-                    <p>When I'm not behind the camera, I enjoy teaching photography workshops and exploring new techniques in digital art and design.</p>
-                    <div class="skills">
-                        <h3>My Skills</h3>
-                        <div class="skill">
-                            <p>Photography</p>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="95%"></div>
+            <div class="story-grid">
+                <div class="story-content">
+                    <h2 class="section-title">My Journey in AI</h2>
+                    <p>My fascination with artificial intelligence began during my early years in computer science education. The potential of machines to learn, reason, and perceive the world captivated me, leading me to specialize in Deep Learning and Computer Vision.</p>
+                    <p>Currently pursuing my BSC in Computer Science and Engineering, I've dedicated my academic career to exploring the frontiers of AI. My work at <strong>Tiny Neurons Research Group</strong> has allowed me to contribute to cutting-edge research and publish papers in recognized venues.</p>
+                    <p>Beyond academic research, I'm passionate about applying AI to solve real-world problems. My expertise spans from theoretical foundations to practical implementation, with skills in Python, TensorFlow, PyTorch, and various web technologies.</p>
+                    <div class="personal-interests">
+                        <h3>Beyond Research</h3>
+                        <div class="interests-list">
+                            <div class="interest">
+                                <i class="fas fa-book"></i>
+                                <span>Reading AI Literature</span>
                             </div>
-                        </div>
-                        <div class="skill">
-                            <p>Photo Editing</p>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="90%"></div>
+                            <div class="interest">
+                                <i class="fas fa-laptop-code"></i>
+                                <span>Open Source Contributions</span>
                             </div>
-                        </div>
-                        <div class="skill">
-                            <p>Web Design</p>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="85%"></div>
+                            <div class="interest">
+                                <i class="fas fa-chalkboard-teacher"></i>
+                                <span>Mentoring Juniors</span>
+                            </div>
+                            <div class="interest">
+                                <i class="fas fa-robot"></i>
+                                <span>AI Ethics Advocacy</span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="about-image">
-                    <div class="profile-card">
-                        <div class="card-inner">
-                            <div class="card-front">
-                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Profile" class="profile-img">
-                                <h2>Your Name</h2>
-                                <p>Photographer & Designer</p>
+                <div class="story-visual">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-date">2020 - Present</div>
+                            <div class="timeline-content">
+                                <h3>BSC in CSE</h3>
+                                <p>Your University Name</p>
+                                <p>Specializing in AI and Machine Learning</p>
                             </div>
-                            <div class="card-back">
-                                <h2>My Achievements</h2>
-                                <ul>
-                                    <li>10+ Years Experience</li>
-                                    <li>50+ Exhibitions</li>
-                                    <li>100+ Projects</li>
-                                    <li>25+ Awards</li>
-                                </ul>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">2021 - Present</div>
+                            <div class="timeline-content">
+                                <h3>Research Member</h3>
+                                <p>Tiny Neurons Research Group</p>
+                                <p>Focus on DL, Computer Vision, and Agentic AI</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">2022</div>
+                            <div class="timeline-content">
+                                <h3>First Paper Published</h3>
+                                <p>Conference/Journal Name</p>
+                                <p>Breakthrough in [Your Research Area]</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">2023</div>
+                            <div class="timeline-content">
+                                <h3>Second Paper Published</h3>
+                                <p>Conference/Journal Name</p>
+                                <p>Advancements in [Your Research Area]</p>
                             </div>
                         </div>
                     </div>
@@ -89,33 +134,142 @@
         </div>
     </section>
 
-    <!-- Experience Section -->
-    <section class="experience section">
+    <!-- Education & Qualifications -->
+    <section class="education section dark-section">
         <div class="container">
-            <h2 class="section-title">My Experience</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-date">2018 - Present</div>
-                    <div class="timeline-content">
-                        <h3>Senior Photographer</h3>
-                        <p>Creative Studio Inc.</p>
-                        <p>Leading photography projects for major clients and mentoring junior photographers.</p>
+            <h2 class="section-title">Education & Qualifications</h2>
+            <div class="education-cards">
+                <div class="education-card">
+                    <div class="edu-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>BSC in Computer Science</h3>
+                    <p class="institution">Your University Name</p>
+                    <p class="duration">2020 - Present</p>
+                    <div class="edu-details">
+                        <p><strong>Specialization:</strong> Artificial Intelligence & Machine Learning</p>
+                        <p><strong>Key Courses:</strong> Deep Learning, Computer Vision, Neural Networks, Data Mining</p>
+                        <p><strong>GPA:</strong> 3.8/4.0 (or your actual GPA)</p>
                     </div>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-date">2015 - 2018</div>
-                    <div class="timeline-content">
-                        <h3>Photographer</h3>
-                        <p>Visual Arts Agency</p>
-                        <p>Specialized in commercial and portrait photography for various clients.</p>
+                <div class="education-card">
+                    <div class="edu-icon">
+                        <i class="fas fa-certificate"></i>
                     </div>
+                    <h3>Certifications & Workshops</h3>
+                    <ul class="cert-list">
+                        <li>Deep Learning Specialization (Coursera)</li>
+                        <li>Computer Vision Nanodegree (Udacity)</li>
+                        <li>Advanced Python for Data Science</li>
+                        <li>TensorFlow Developer Certificate</li>
+                    </ul>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-date">2012 - 2015</div>
-                    <div class="timeline-content">
-                        <h3>Junior Photographer</h3>
-                        <p>Image Works</p>
-                        <p>Started my professional career assisting senior photographers and building my portfolio.</p>
+                <div class="education-card">
+                    <div class="edu-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>Awards & Honors</h3>
+                    <ul class="awards-list">
+                        <li>Best Paper Award - Conference Name (Year)</li>
+                        <li>University Research Scholarship</li>
+                        <li>AI Innovation Challenge Winner</li>
+                        <li>Dean's List (All Semesters)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Skills Deep Dive -->
+    <section class="skills-deep-dive section">
+        <div class="container">
+            <h2 class="section-title">Technical Proficiency</h2>
+            <div class="skills-tabs">
+                <div class="tab-buttons">
+                    <button class="tab-btn active" data-tab="ai-ml">AI/ML Stack</button>
+                    <button class="tab-btn" data-tab="web-dev">Web Development</button>
+                    <button class="tab-btn" data-tab="mobile">Mobile Development</button>
+                    <button class="tab-btn" data-tab="tools">Tools & Technologies</button>
+                </div>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="ai-ml">
+                        <div class="skill-category">
+                            <h3>Deep Learning Frameworks</h3>
+                            <div class="skill-items">
+                                <div class="skill-tag">TensorFlow</div>
+                                <div class="skill-tag">PyTorch</div>
+                                <div class="skill-tag">Keras</div>
+                                <div class="skill-tag">Scikit-learn</div>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Computer Vision</h3>
+                            <div class="skill-items">
+                                <div class="skill-tag">OpenCV</div>
+                                <div class="skill-tag">YOLO</div>
+                                <div class="skill-tag">CNN Architectures</div>
+                                <div class="skill-tag">Image Segmentation</div>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Natural Language Processing</h3>
+                            <div class="skill-items">
+                                <div class="skill-tag">Transformers</div>
+                                <div class="skill-tag">BERT</div>
+                                <div class="skill-tag">NLTK</div>
+                                <div class="skill-tag">spaCy</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="web-dev">
+                        <div class="skill-category">
+                            <h3>Frontend Technologies</h3>
+                            <div class="skill-items">
+                                <div class="skill-tag">HTML5</div>
+                                <div class="skill-tag">CSS3</div>
+                                <div class="skill-tag">JavaScript</div>
+                                <div class="skill-tag">React</div>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Backend Technologies</h3>
+                            <div class="skill-items">
+                                <div class="skill-tag">Django</div>
+                                <div class="skill-tag">Flask</div>
+                                <div class="skill-tag">REST APIs</div>
+                                <div class="skill-tag">PostgreSQL</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="mobile">
+                        <div class="skill-category">
+                            <h3>Mobile Development</h3>
+                            <div class="skill-items">
+                                <div class="skill-tag">Flutter</div>
+                                <div class="skill-tag">Dart</div>
+                                <div class="skill-tag">Firebase</div>
+                                <div class="skill-tag">RESTful APIs</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="tools">
+                        <div class="skill-category">
+                            <h3>Development Tools</h3>
+                            <div class="skill-items">
+                                <div class="skill-tag">Git</div>
+                                <div class="skill-tag">Docker</div>
+                                <div class="skill-tag">Jupyter Notebooks</div>
+                                <div class="skill-tag">VS Code</div>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Cloud Platforms</h3>
+                            <div class="skill-items">
+                                <div class="skill-tag">Google Cloud</div>
+                                <div class="skill-tag">AWS</div>
+                                <div class="skill-tag">Heroku</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -125,19 +279,26 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <h2>Let's Connect</h2>
-            <ul class="social-links">
-                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                <li><a href="#"><i class="fab fa-behance"></i></a></li>
-            </ul>
-            <p>&copy; 2023 Your Name. All Rights Reserved.</p>
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Your Name</h3>
+                    <p>Deep Learning Researcher & Computer Vision Enthusiast</p>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="research.html">Research</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="index.html#contact">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Your Name. All Rights Reserved.</p>
+            </div>
         </div>
     </footer>
 
-    <script src="script.js"></script>
-    <script src="about.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/about.js"></script>
 </body>
 </html>

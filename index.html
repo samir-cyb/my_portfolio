@@ -3,19 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name | Professional Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Your Name | DL & Computer Vision Researcher</title>
+    <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
     <nav>
-        <a href="#" class="logo">Portfolio</a>
+        <a href="index.html" class="logo">Redwan Ahamad Samir</a>
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="projects.html">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
         <div class="menu-btn">
@@ -29,68 +30,237 @@
     <section id="home" class="hero">
         <div class="hero-bg"></div>
         <div class="hero-content">
-            <h1>Hello, I'm <span style="color: var(--primary-color);">Redwan Ahamad Samir</span></h1>
-            <p>Professional Photographer & Creative Designer</p>
-            <a href="#contact" class="btn">Get in Touch</a>
+            <h1>Hello, I'm <span class="highlight">Redwan Ahamad Samir</span></h1>
+            <div class="typing-container">
+                <p>I'm a <span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
+            </div>
+            <p>BSC CSE Student | Deep Learning Researcher | Computer Vision Enthusiast</p>
+            <div class="hero-buttons">
+                <a href="research.html" class="btn">View My Research</a>
+                <a href="#contact" class="btn btn-outline">Get In Touch</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll Down</span>
+            <div class="arrow"></div>
         </div>
     </section>
 
-    <!-- About Preview Section -->
-    <section id="about-preview" class="section">
+    <!-- Quick Introduction -->
+    <section id="intro" class="section">
         <div class="container">
-            <h2 class="section-title animate">About Me</h2>
-            <div class="about-preview-content">
-                <p>I'm a professional photographer and designer with over 10 years of experience in creating stunning visual content. My passion lies in capturing moments that tell stories and evoke emotions.</p>
-                <a href="about.html" class="btn">Learn More About Me</a>
+            <div class="intro-grid">
+                <div class="intro-text">
+                    <h2 class="section-title">Passionate About AI Research</h2>
+                    <p>I'm currently pursuing my BSC in Computer Science and Engineering with a focus on Deep Learning, Computer Vision, and Agentic AI. I'm actively contributing to cutting-edge research at <strong>Tiny Neurons Research Group</strong> and have published papers in recognized venues.</p>
+                    <div class="quick-stats">
+                        <div class="stat">
+                            <h3>2</h3>
+                            <p>Published Papers</p>
+                        </div>
+                        <div class="stat">
+                            <h3>1</h3>
+                            <p>Year Experience</p>
+                        </div>
+                        <div class="stat">
+                            <h3>10+</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="intro-visual">
+                    <div class="tech-sphere">
+                        <div class="sphere-item" data-tooltip="Python">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <div class="sphere-item" data-tooltip="TensorFlow">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="sphere-item" data-tooltip="PyTorch">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <div class="sphere-item" data-tooltip="Computer Vision">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <div class="sphere-item" data-tooltip="Django">
+                            <i class="fas fa-shield-alt"></i> <!-- Change this icon -->
+                        </div>
+                        <div class="sphere-item" data-tooltip="Flutter">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <!-- ADD THESE NEW SKILLS -->
+                        <div class="sphere-item" data-tooltip="IoT">
+                            <i class="fas fa-wifi"></i>
+                        </div>
+                        <div class="sphere-item" data-tooltip="NLP">
+                            <i class="fas fa-language"></i>
+                        </div>
+                        <div class="sphere-item" data-tooltip="LLM">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="sphere-item" data-tooltip="Deep Learning">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Gallery Preview Section -->
-    <section id="gallery-preview" class="section">
+    <!-- Research Highlights -->
+    <section id="research-highlights" class="section dark-section">
         <div class="container">
-            <h2 class="section-title animate">My Work</h2>
-            <div class="gallery-preview-grid">
-                <div class="gallery-preview-item">
-                    <img src="https://images.unsplash.com/photo-1505896202-4ed0cceea51e?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Gallery Preview 1">
-                    <div class="gallery-preview-overlay">
-                        <h3>Nature Photography</h3>
+            <h2 class="section-title">Research Focus Areas</h2>
+            <div class="research-cards">
+                <div class="research-card">
+                    <div class="card-icon">
+                        <i class="fas fa-robot"></i>
                     </div>
+                    <h3>Agentic AI</h3>
+                    <p>Developing autonomous AI systems capable of reasoning, planning, and decision-making in complex environments.</p>
+                    <a href="research.html#agentic-ai" class="card-link">Learn More →</a>
                 </div>
-                <div class="gallery-preview-item">
-                    <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Gallery Preview 2">
-                    <div class="gallery-preview-overlay">
-                        <h3>Portrait Photography</h3>
+                <div class="research-card">
+                    <div class="card-icon">
+                        <i class="fas fa-eye"></i>
                     </div>
+                    <h3>Computer Vision</h3>
+                    <p>Researching advanced CV techniques including object detection, image segmentation, and generative models.</p>
+                    <a href="research.html#computer-vision" class="card-link">Learn More →</a>
                 </div>
-                <div class="gallery-preview-item">
-                    <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Gallery Preview 3">
-                    <div class="gallery-preview-overlay">
-                        <h3>Landscape Photography</h3>
+                <div class="research-card">
+                    <div class="card-icon">
+                        <i class="fas fa-network-wired"></i>
                     </div>
+                    <h3>Deep Learning</h3>
+                    <p>Exploring novel neural architectures, optimization techniques, and applications across various domains.</p>
+                    <a href="research.html#deep-learning" class="card-link">Learn More →</a>
                 </div>
             </div>
-            <div class="text-center">
-                <a href="gallery.html" class="btn">View Full Gallery</a>
+        </div>
+    </section>
+
+    <!-- Skills Overview -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">Technical Expertise</h2>
+            <div class="skills-container">
+                <div class="skills-category">
+                    <h3>AI/ML Technologies</h3>
+                    <div class="skill-item">
+                        <span>Python</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>TensorFlow/PyTorch</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="70%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Computer Vision</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="65%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Deep Learning</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="70%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Natural Language Processing (NLP)</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Large Language Models (LLM)</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>IoT & Embedded Systems</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="78%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3>Web & Mobile Development</h3>
+                    <div class="skill-item">
+                        <span>Django</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Flutter</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="70%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>HTML/CSS/JS</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="90%"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact">
+    <section id="contact" class="section dark-section">
         <div class="container">
-            <h2 class="section-title animate">Get In Touch</h2>
-            <div class="contact-form animate">
-                <div class="form-group">
-                    <input type="text" class="form-input" placeholder="Your Name">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Let's Collaborate</h3>
+                    <p>I'm always interested in discussing research opportunities, collaborations, or just chatting about AI and technology.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>redwansamir90@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>University of Liberal Arts Bangladesh, Dhaka</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-building"></i>
+                            <span>Tiny Neurons Research Group</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/ras200/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/samir-cyb"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fas fa-book"></i></a>
+                        <a href="https://www.researchgate.net/profile/Redwan-Samir?ev=hdr_xprf"><i class="fas fa-search"></i></a>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <input type="email" class="form-input" placeholder="Your Email">
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" class="form-input" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-input" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-input" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-input" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
                 </div>
-                <div class="form-group">
-                    <textarea class="form-input" placeholder="Your Message"></textarea>
-                </div>
-                <button class="btn">Send Message</button>
             </div>
         </div>
     </section>
@@ -98,18 +268,25 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <h2>Let's Connect</h2>
-            <ul class="social-links">
-                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                <li><a href="#"><i class="fab fa-behance"></i></a></li>
-            </ul>
-            <p>&copy; 2023 Your Name. All Rights Reserved.</p>
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Your Name</h3>
+                    <p>Deep Learning Researcher & Computer Vision Enthusiast</p>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="research.html">Research</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Your Name. All Rights Reserved.</p>
+            </div>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
